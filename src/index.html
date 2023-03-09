@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Webpack</title>
+</head>
+
+<body class="bg-color-1 font-roboto">
+  <!-- Sidebar: START -->
+  <div id="sidebar" class="sidebar relative w-1/6 h-screen bg-white rounded-r-xl py-10 transition-all duration-500 ease-in-out">
+    <!-- Menu Toggler: START -->
+    <div class="mx-auto px-5">
+      <button id="menu-toggler">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <mask id="mask0_86_1142" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+          <rect width="24" height="24" fill="#D9D9D9"/>
+          </mask>
+          <g mask="url(#mask0_86_1142)">
+          <path d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z" fill="#2F2F2F"/>
+          </g>
+        </svg>          
+      </button>
+    </div>
+    <!-- Menu Toggler: END -->
+    
+    <!-- Menu Items: START -->
+    <ul class="menu-items flex flex-col items-start mx-auto px-5 my-10 float-left">
+      <li class="link-item w-auto h-10">            
+        <a class="flex flex-row items-center" href="#dashboard">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_86_1146" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_86_1146)">
+            <path d="M5 21C4.45 21 3.979 20.8043 3.587 20.413C3.19567 20.021 3 19.55 3 19V5C3 4.45 3.19567 3.979 3.587 3.587C3.979 3.19567 4.45 3 5 3H19C19.55 3 20.021 3.19567 20.413 3.587C20.8043 3.979 21 4.45 21 5V19C21 19.55 20.8043 20.021 20.413 20.413C20.021 20.8043 19.55 21 19 21H5ZM5 19H11V5H5V19ZM13 19H19V12H13V19ZM13 10H19V5H13V10Z" fill="#2F2F2F"/>
+            </g>
+          </svg>
+          <span id="span-link" class="mx-3 opacity-100 transition-all duration-300 ease-in-out">Dashboard</span>
+        </a>
+      </li>
+      <li class="link-item w-auto h-10">           
+        <a class="flex flex-row items-center" href="#mytasks">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_86_1151" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_86_1151)">
+            <path d="M12 22C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6873 5.825 19.975 4.925 19.075C4.025 18.175 3.31267 17.1167 2.788 15.9C2.26267 14.6833 2 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31267 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.31233 8.1 2.787C9.31667 2.26233 10.6167 2 12 2C13.0833 2 14.1083 2.15833 15.075 2.475C16.0417 2.79167 16.9333 3.23333 17.75 3.8L16.3 5.275C15.6667 4.875 14.9917 4.56233 14.275 4.337C13.5583 4.11233 12.8 4 12 4C9.78333 4 7.896 4.779 6.338 6.337C4.77933 7.89567 4 9.78333 4 12C4 14.2167 4.77933 16.1043 6.338 17.663C7.896 19.221 9.78333 20 12 20C14.2167 20 16.1043 19.221 17.663 17.663C19.221 16.1043 20 14.2167 20 12C20 11.7 19.9833 11.4 19.95 11.1C19.9167 10.8 19.8667 10.5083 19.8 10.225L21.425 8.6C21.6083 9.13333 21.75 9.68333 21.85 10.25C21.95 10.8167 22 11.4 22 12C22 13.3833 21.7373 14.6833 21.212 15.9C20.6873 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6873 15.9 21.212C14.6833 21.7373 13.3833 22 12 22ZM10.6 16.6L6.35 12.35L7.75 10.95L10.6 13.8L20.6 3.775L22 5.175L10.6 16.6Z" fill="#2F2F2F"/>
+            </g>
+          </svg> 
+          <span id="span-link" class="mx-3 opacity-100 transition-all duration-300 ease-in-out">My Tasks</span>
+        </a>
+      </li>
+      <li class="link-item w-auto h-10">
+        <a class="flex flex-row items-center" href="#reporting">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_86_1156" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_86_1156)">
+            <path d="M3.5 18.5L2 17L9.5 9.5L13.5 13.5L20.6 5.5L22 6.9L13.5 16.5L9.5 12.5L3.5 18.5Z" fill="#2F2F2F"/>
+            </g>
+          </svg>
+          <span id="span-link" class="mx-3 opacity-100 transition-all duration-300 ease-in-out">Reporting</span>
+        </a>
+      </li>
+      <li class="link-item w-auto h-10">            
+        <a class="flex flex-row items-center" href="#portfolio">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_86_1161" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_86_1161)">
+            <path d="M8 18H16V16H8V18ZM8 14H16V12H8V14ZM6 22C5.45 22 4.97933 21.8043 4.588 21.413C4.196 21.021 4 20.55 4 20V4C4 3.45 4.196 2.979 4.588 2.587C4.97933 2.19567 5.45 2 6 2H14L20 8V20C20 20.55 19.8043 21.021 19.413 21.413C19.021 21.8043 18.55 22 18 22H6ZM13 9V4H6V20H18V9H13Z" fill="#2F2F2F"/>
+            </g>
+          </svg>
+          <span id="span-link" class="mx-3 opacity-100 transition-all duration-300 ease-in-out">Portfolio</span>
+        </a>
+      </li>
+      <li class="link-item w-auto h-10">            
+        <a class="flex flex-row items-center" href="#goals">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.172 6.75H18.311L13.745 11.314C13.9022 11.7148 13.9167 12.1575 13.7859 12.5677C13.6552 12.9779 13.3871 13.3306 13.0269 13.5664C12.6667 13.8022 12.2363 13.9068 11.808 13.8626C11.3798 13.8184 10.9798 13.6281 10.6753 13.3236C10.3709 13.0192 10.1806 12.6192 10.1364 12.191C10.0922 11.7627 10.1968 11.3323 10.4326 10.972C10.6684 10.6118 11.0211 10.3438 11.4313 10.213C11.8415 10.0823 12.2842 10.0967 12.685 10.254L17.25 5.689V3.828C17.2501 3.57898 17.349 3.34017 17.525 3.164L19.255 1.434C19.2869 1.40168 19.3271 1.37873 19.3712 1.36763C19.4153 1.35652 19.4615 1.35769 19.505 1.371C19.594 1.397 19.66 1.471 19.678 1.562L20.138 3.863L22.438 4.323C22.528 4.341 22.602 4.407 22.628 4.496C22.6411 4.53923 22.6423 4.58522 22.6314 4.62906C22.6204 4.67291 22.5978 4.71297 22.566 4.745L20.835 6.475C20.748 6.56216 20.6446 6.63131 20.5309 6.6785C20.4171 6.72569 20.2951 6.74999 20.172 6.75Z" fill="#2F2F2F"/>
+            <path d="M2.625 12C2.625 14.4864 3.61272 16.871 5.37087 18.6291C7.12903 20.3873 9.5136 21.375 12 21.375C13.2311 21.375 14.4502 21.1325 15.5877 20.6614C16.7251 20.1902 17.7586 19.4997 18.6291 18.6291C19.4997 17.7586 20.1902 16.7251 20.6614 15.5877C21.1325 14.4502 21.375 13.2311 21.375 12C21.375 11.102 21.249 10.234 21.014 9.41301C20.9673 9.2245 20.9955 9.02522 21.0928 8.8571C21.19 8.68899 21.3487 8.56515 21.5353 8.51164C21.722 8.45813 21.9222 8.47913 22.0937 8.57021C22.2653 8.6613 22.3948 8.81537 22.455 9.00001C22.729 9.95401 22.875 10.96 22.875 12C22.875 18.006 18.006 22.875 12 22.875C5.994 22.875 1.125 18.006 1.125 12C1.125 5.99401 5.994 1.12501 12 1.12501C13.015 1.12401 14.024 1.26501 15 1.54401C15.0952 1.5707 15.1841 1.61594 15.2617 1.67713C15.3393 1.73831 15.4041 1.81423 15.4523 1.90053C15.5005 1.98683 15.5311 2.0818 15.5425 2.17998C15.5538 2.27816 15.5457 2.37762 15.5184 2.47264C15.4912 2.56765 15.4455 2.65635 15.3839 2.73364C15.3223 2.81092 15.246 2.87527 15.1595 2.92297C15.0729 2.97068 14.9778 3.00081 14.8795 3.01163C14.7813 3.02244 14.6819 3.01374 14.587 2.98601C13.7457 2.74573 12.8749 2.62423 12 2.62501C9.5136 2.62501 7.12903 3.61273 5.37087 5.37088C3.61272 7.12903 2.625 9.5136 2.625 12Z" fill="#2F2F2F"/>
+            <path d="M7.12499 12C7.12778 12.6623 7.26553 13.3171 7.52983 13.9244C7.79414 14.5318 8.17945 15.0788 8.66223 15.5322C9.14502 15.9857 9.71516 16.3359 10.3378 16.5617C10.9605 16.7874 11.6227 16.8838 12.2839 16.8451C12.9451 16.8064 13.5914 16.6333 14.1835 16.3365C14.7756 16.0396 15.3009 15.6252 15.7275 15.1185C16.1541 14.6118 16.4729 14.0235 16.6645 13.3895C16.8561 12.7555 16.9165 12.0891 16.842 11.431C16.821 11.2977 16.8364 11.1612 16.8867 11.036C16.9369 10.9108 17.0201 10.8015 17.1274 10.7197C17.2348 10.6379 17.3622 10.5867 17.4963 10.5714C17.6303 10.5561 17.766 10.5774 17.889 10.633C18.14 10.745 18.309 10.984 18.331 11.258C18.4863 12.5733 18.2279 13.9042 17.5919 15.0658C16.9558 16.2275 15.9737 17.1621 14.782 17.7399C13.5902 18.3176 12.2481 18.5097 10.9422 18.2894C9.63624 18.0692 8.43135 17.4476 7.49499 16.511C6.55888 15.5754 5.93711 14.3717 5.71591 13.0669C5.49471 11.762 5.68504 10.4207 6.26051 9.22885C6.83598 8.03703 7.76805 7.05382 8.92747 6.41559C10.0869 5.77736 11.4162 5.51573 12.731 5.667C12.8304 5.67623 12.9269 5.7052 13.015 5.75222C13.103 5.79924 13.1808 5.86337 13.2438 5.94084C13.3067 6.01831 13.3536 6.10757 13.3816 6.20338C13.4096 6.2992 13.4182 6.39964 13.4069 6.49882C13.3955 6.59799 13.3645 6.69392 13.3157 6.78096C13.2668 6.868 13.2011 6.94441 13.1223 7.00571C13.0435 7.06702 12.9533 7.11197 12.8569 7.13795C12.7605 7.16393 12.6599 7.17041 12.561 7.157C11.878 7.07804 11.1861 7.14441 10.5306 7.35174C9.87504 7.55907 9.27078 7.90269 8.75743 8.36003C8.24409 8.81738 7.83327 9.37811 7.55193 10.0054C7.27059 10.6328 7.12509 11.3125 7.12499 12Z" fill="#2F2F2F"/>
+          </svg>
+          <span id="span-link" class="mx-3 opacity-100 transition-all duration-300 ease-in-out">Goals</span>
+        </a>
+      </li>
+    </ul>
+    <!-- Menu Items: END -->
+
+    <div class="bg-color-1 w-full h-0.5  float-left"></div>
+
+    <!-- Menu Workspaces: START -->
+    <div id="workspace" class="workspaces mx-auto px-5 my-10 float-left">
+      <div class="flex flex-row items-center justify-between mb-5">
+        <span id="span-link" class="opacity-100 transition-all duration-300 ease-in-out">My Workspaces</span>
+        <button>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_86_1166" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_86_1166)">
+            <path d="M11 19V13H5V11H11V5H13V11H19V13H13V19H11Z" fill="#42C2FF"/>
+            </g>
+          </svg>            
+        </button>
+      </div>
+      <ul id="workspace-items" class="workspace-items">
+        <li class="work-item">
+          <a class="" href="#">             
+            <span id="span-link" class="mx-0 opacity-100 flex flex-row items-center justify-around transition-all duration-300 ease-in-out">
+              <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6" height="6" fill="#FF9494"/>
+              </svg> 
+              <span>Frontend Developer</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Menu Workspaces: END -->
+  </div>
+  <!-- Sidebar: END -->
+</body>
+
+</html>
